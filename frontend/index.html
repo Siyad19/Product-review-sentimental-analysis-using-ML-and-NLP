@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Sentiment Analysis</title>
+    <!-- Use a modern sans-serif font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Animated background blobs for a premium glassmorphic effect -->
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    
+    <div class="container glass-panel">
+        <header>
+            <h1>AI Sentiment Analysis</h1>
+            <p>Paste a product review below to analyze its sentiment using our NLP model.</p>
+        </header>
+
+        <form id="sentimentForm">
+            <div class="input-group">
+                <textarea id="reviewText" placeholder="E.g., I absolutely love this product! It's exactly what I needed..." required></textarea>
+            </div>
+            <button type="submit" id="submitBtn">
+                <span class="btn-text">Analyze Sentiment</span>
+                <div class="spinner" id="spinner"></div>
+            </button>
+        </form>
+
+        <div id="resultContainer" class="result-container hidden">
+            <h2 id="sentimentResult">Positive</h2>
+            <div class="confidence-bar-container">
+                <div class="confidence-bar" id="confidenceBar"></div>
+            </div>
+            <p class="confidence-text">Model Confidence: <span id="confidenceValue">95</span>%</p>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
