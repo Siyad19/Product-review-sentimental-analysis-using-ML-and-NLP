@@ -41,6 +41,8 @@ Product review sentimental analysis/
 ```
 
 ---
+## Here is the dataset 
+https://drive.google.com/file/d/1h1yX7_7A7apz0wjciqjeciCJUZn-pGsj/view?usp=sharing
 
 ## 🚀 Want to run it yourself?
 
